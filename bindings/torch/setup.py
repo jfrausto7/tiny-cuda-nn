@@ -107,7 +107,7 @@ print(f"Targeting C++ standard {cpp_standard}")
 
 base_nvcc_flags = [
 	f"-std=c++{cpp_standard}",
-	"--extended-lambda",
+	"--expt-extended-lambda",
 	"--expt-relaxed-constexpr",
 	# The following definitions must be undefined
 	# since TCNN requires half-precision operation.
